@@ -12,11 +12,13 @@ They are priced through the input of relevant market data and given option data,
 With this information the Program returns a price for the option.
 It also return the values of the Option's Greeks which are the following:
 
-- Delta: How much the options price changes relative to movement of the Underlying Equity (eg; a Delta of 0.80 means for a $1 move in the equity, the options price changes by $0.80)
+- Delta: How much the options price changes relative to movement of the Underlying Equity (eg; a Delta of +0.80 means for a $1 increase in the equity, the options price increases by $0.80)
 - Gamma: How much the Delta changes relative to movement of the Underlying Equity (eg; a gamma of 0.03 means for a $1 move in the equity, the delta value changes by 0.03)
 - Theta: Time Decay (this model returns the daily time decay value)
 - Vega: How the Options price reacts change in IV (this model shows the value for a 1% change in IV)
 - Rho: How the Options price reacts change in Risk Free Return rate
+
+*Puts have a negative delta value whereas Calls have a positive delta Value
 
 In the Code Attached. You may notice a computation has been done at the bottom for an option already to show you an example of how the program works.
 For Reference the Option is a _SPX 6950 Call Option expiring on Jan 16th 2026_. The calculation was done on Jan 9th 2026 hence the 7 days till expiry.
